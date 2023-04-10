@@ -1,11 +1,8 @@
 const express = require('express');
 const request = require('request');
 
-console.log(process.env.API_CLIENT_ID);
-console.log(process.env.API_CLIENT_SECRET);
-
-const API_CLIENT_ID = process.env.API_CLIENT_ID;
-const API_CLIENT_SECRET = process.env.API_CLIENT_SECRET;
+const API_CLIENT_ID = "tMfKtRmuy_fJa5dxsAFa";
+const API_CLIENT_SECRET = "3KTsM8LPGr";
 
 const app = express();
 
