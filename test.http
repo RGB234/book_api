@@ -1,0 +1,14 @@
+# API_CLINET_ID = "tMfKtRmuy_fJa5dxsAFa"
+# API_CLIENT_SECRET = "3KTsM8LPGr"
+
+#book search / json or xml
+curl "https://openapi.naver.com/v1/search/book.json?query=주식&display=10&start=1" \
+    -H "X-Naver-Client-Id: tMfKtRmuy_fJa5dxsAFa" \
+    -H "X-Naver-Client-Secret: 3KTsM8LPGr"
+
+####
+
+#book detail info / xml
+curl "https://openapi.naver.com/v1/search/book_adv.xml?d_titl=햄스터&display=10&start=1" \
+    -H "X-Naver-Client-Id: tMfKtRmuy_fJa5dxsAFa" \
+    -H "X-Naver-Client-Secret: 3KTsM8LPGr" -v
