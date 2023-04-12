@@ -30,7 +30,7 @@ app.get('/:keyword', (req, res) => {
     request(options, function (err, response, body) {
         books_body = JSON.parse(response.body);
         //response.body["items"] >> error :"undefined" is not valid JSON
-        books = books_body["items"]
+        books = books_body["items"];
         res.send(books);
     });
 });
