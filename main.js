@@ -1,5 +1,6 @@
 const express = require('express');
 const request = require('request');
+const cors = require('cors');
 
 const API_CLIENT_ID = "tMfKtRmuy_fJa5dxsAFa";
 const API_CLIENT_SECRET = "3KTsM8LPGr";
@@ -9,6 +10,7 @@ const app = express();
 // Middleware for POST request 
 //json데이터를 담은 request body 를 parsing 하여 받아들일 수 있게 함
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send(`<h1>Hello World</h1>`);
