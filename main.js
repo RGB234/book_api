@@ -23,6 +23,7 @@ app.get('/:keyword', (req, res) => {
         uri: "https://openapi.naver.com/v1/search/book.json",
         qs: {
             query: req.params.keyword, //:keyword
+            display: 100,
         },
         headers: {
             "X-Naver-Client-Id": API_CLIENT_ID,
