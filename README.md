@@ -7,10 +7,10 @@ client : booksearch (flutter) , server : book_api (https://github.com/RGB234/boo
 The server is implemented through the 'main.js' file  
 and just imitates a server by sending and receiving requests to Naver Open API.  
 
-<img src="https://github.com/RGB234/book_api/assets/67996767/fc4bed48-8942-43bc-aaab-a1ddffd74730" width="50%" height="50%">
+
 
 > "/", GET  
-![image](https://github.com/RGB234/book_api/assets/67996767/13382f92-6be0-4d0b-b23b-41601ca5519b)  
+<img src="https://github.com/RGB234/book_api/assets/67996767/13382f92-6be0-4d0b-b23b-41601ca5519b" width="80%" height="80%">  
 
-> "/:keyword", GET  
-![image](https://github.com/RGB234/book_api/assets/67996767/d7664e2e-e0cb-4937-a241-b21f6061bb29)  
+> "/:keyword", GET
+<img src="https://github.com/RGB234/book_api/assets/67996767/d7664e2e-e0cb-4937-a241-b21f6061bb29" width="90%" height="80%">  
