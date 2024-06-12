@@ -5,7 +5,7 @@ This project was created to simulate a client-server architecture operating on a
 client : booksearch (flutter) , server : book_api (https://github.com/RGB234/book_api) (express.js)  
 
 The server is implemented through the 'main.js' file  
-and just imitates a server by sending and receiving requests to Naver Open API.  
+and just imitates a server by sending and receiving requests to Naver Open API. (MOCK SERVER)  
 
 
 
