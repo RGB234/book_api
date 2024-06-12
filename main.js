@@ -2,13 +2,14 @@ const express = require("express");
 const request = require("request");
 const cors = require("cors");
 
+// 하루 25000 번 API 호출 가능
 const API_CLIENT_ID = "tMfKtRmuy_fJa5dxsAFa";
 const API_CLIENT_SECRET = "3KTsM8LPGr";
 
 const app = express();
 
 // Middleware for POST request
-//json데이터를 담은 request body 를 parsing 하여 받아들일 수 있게 함
+// json데이터를 담은 request body 를 parsing 하여 받아들일 수 있게 함
 app.use(express.json());
 app.use(cors());
 
@@ -16,7 +17,7 @@ app.get("/", (req, res) => {
   res.send(`<h1>Hello World</h1>`);
 });
 
-//reference(API-request) : https://velog.io/@mingtorr/node.js-%EC%97%90%EC%84%9C-api%EC%9A%94%EC%B2%AD%ED%95%98%EA%B8%B0
+// reference(API-request) : https://velog.io/@mingtorr/node.js-%EC%97%90%EC%84%9C-api%EC%9A%94%EC%B2%AD%ED%95%98%EA%B8%B0
 
 app.get("/:keyword", (req, res) => {
   const options = {
@@ -31,8 +32,8 @@ app.get("/:keyword", (req, res) => {
     },
   };
   request(options, function (err, response, body) {
+    // response.body["items"] >> error :"undefined" is not valid JSON
     books_body = JSON.parse(response.body);
-    //response.body["items"] >> error :"undefined" is not valid JSON
     books = books_body["items"];
     res.send(books);
   });
